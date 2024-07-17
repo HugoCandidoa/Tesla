@@ -1,62 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tesla</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<!DOCTYPE html> 
+<html lang="pt-br"> 
 
-  <body>
-    <img src="imagens/logo.png" alt="Logo Tesla" class="logo" />
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevClub - Tesla</title>
+</head>
 
-    <ul>
-      <!--Box 1-->
-      <li class="item">
-        <video src="imagens/model-y.mp4" autoplay loop muted></video>
+<body>
+    <img src="imagens/logo.png" alt="logo da tesla" class="logo">
 
-        <div class="info-carro">
-          <h1>Model Y</h1>
-          <p class="p">Compre agora o seu Tesla Model Y</p>
-        </div>
+    <ul class="lista">
+        <!-- ITEM 1 -->
+        <li class="item">
+            <video src="imagens/model-y.mp4" muted loop autoplay></video>
 
-        <footer>
-          <button class="encomendar">Encomendar</button>
-          <button>Test-Drive</button>
-        </footer>
-      </li>
+            <div class="info-carro">
+                <h1>Model Y</h1> 
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
 
-      <!--Box 2-->
-      <li class="item">
-        <img src="imagens/model-3.png" alt="Model 3">
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Comprar Agora</button>
+                <button class="test-drive">Faça um Test-Drive</button>
+                <p class="texto-rodape">Não garantimos seu veículo imediatamente.Consultar estoque*</p>
+            </div>
+        </li>
 
-        <div class="info-carro">
-          <h1 class="b2">Model 3</h1>
-          <p class="p">Compre agora o seu Tesla Model 3</p>
-        </div>
+        <!-- ITEM 2 -->
+        <li class="item">
+            <img src="imagens/model-3.png" class="img-tesla" alt="imagem model 3">
 
-        <footer>
-          <button class="encomendar">Encomendar</button>
-          <button>Test-Drive</button>
-        </footer>
-      </li>
+            <div class="info-carro">
+                <h1>Model 3</h1> 
+                <p class="sub-titulo">Compre agora o seu Tesla</p>
+            </div>
+        </li>
 
-      <!--Box 3-->
-      <li class="item">
-        <img src="imagens/model-x.png" alt="Model X">
+        <!-- ITEM 3 -->
+        <li class="item">
+            <img src="imagens/model-x.png" class="img-tesla" alt="imagem model x">
 
-        <div class="info-carro">
-          <h1 class="b3">Model S</h1>
-          <p class="p">Compre agora o seu Tesla Model X</p>
-        </div>
-
-        <footer>
-          <button class="encomendar">Encomendar</button>
-          <button>Test-Drive</button>
-        </footer>
-      </li>
+            <div class="info-carro">
+                <h1>Model X</h1> 
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
+        </li>
     </ul>
 
-  </body>
-  <script src="script.js"></script>
+    <div class="formulario">
+        <button onclick="desaparecerFormulario()">Fechar</button>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/241927664739067"></script>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
 </html>

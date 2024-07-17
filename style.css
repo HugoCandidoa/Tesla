@@ -4,82 +4,90 @@
 
 * {
     font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin: 0; /* espaçamento externo */
+    padding: 0; /* espaçamento interno */
+    box-sizing: border-box; 
+    scrollbar-width: none;
 }
+
 
 html {
     scroll-snap-type: y mandatory;
 }
 
-video, img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    filter: brightness(60%);
+video, .img-tesla {
+     width: 100%; /* LARGURA */
+     height: 100%; /* ALTURA */
+     position: absolute; /* POSICIONAR O ITEM NUMA POSIÇÃO EXATA QUE EU DESEJAR */
+     top: 0;
+     left: 0;
+     z-index: -1; /* DEFINE QUEM FICA NA FRENTE DE QUEM */
+     object-fit: cover;/* FAZ COM QUE O VIDEO CUBRA TODA A TELA  */
+     filter: brightness(60%);
 }
-
-
-.logo{
-    margin-top: 7px;
-    margin-left: 7px;
+ 
+.logo {
     filter: brightness(100);
     position: fixed;
-    width: 89px;
+    width: 120px;
 }
 
-.item{
+.item {
+    display: flex; /* HABILITA ALGUMAS PROPRIEDADES CSS */
+
+    justify-content: space-between; /* CRIA UM ESPAÇAMENTO ENTRE OS ITENS */
+    flex-direction: column; /* DEIXAR UM ITEM DEBAIXO DO OUTRO */
+
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    height: 100vh; /* TELA TODA - ALTURA */
+    width: 100vw; /* TELA TODA - LARGURA */
     scroll-snap-align: start;
 }
 
-.info-carro{
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
     margin-top: 80px;
     text-align: center;
 }
 
-h1 {
-    font-size: 30px;
-    color: white;
-}
-
-.p {
-    color: rgb(255, 255, 255);
-}
-
-.b2 {
-    color: rgba(255, 0, 0, 0.747);
-}
-
-.b3 {
-    color: rgba(0, 0, 0, 0.823);
+.rodape {
+    text-align: center; /* ALINHA MEU ITEM AO CENTRO */
 }
 
 button {
-    color: rgb(255, 255, 255);
-    background-color: rgba( 34, 34, 34, 0.7);
-    padding: 7px 40px;
-    margin: 7px;
-    border-radius: 7px;
-    border: none;
-    cursor: pointer;
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px; /* ARREDONDA A BORDA DO BOTÃO */
+    border: none; /* TIRA A BORDA DO BOTÃO */
+    cursor: pointer; /* COLOCA A MÃOSINHA NO LUGAR DO MOUSE */
 }
 
-.encomendar {
-    background-color: rgba(255, 255, 255, 0.7);
+.test-drive {
     color: black;
+    background-color: white;
 }
 
-footer {
-    text-align: center;
+.texto-rodape {
+    color: white;
+    font-size: 12px; /* TAMANHO DO TEXTO */
+    margin-top: 10px;
+}
+
+.formulario {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -50%;
+    transition: 1.5s;
 }
